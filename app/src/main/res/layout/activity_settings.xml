@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings_Activity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:background="#010101"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            android:text="Edit Profile"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/logOut_button"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/off_icon"
+            android:layout_marginRight="@dimen/_3sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="@drawable/profile_icon" />
+
+        <EditText
+            android:id="@+id/settings_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="MercuryChatApp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edtext_shape"/>
+
+        <EditText
+            android:id="@+id/settings_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Hey There! I'm using Mercury Chat App."
+            android:background="@drawable/edtext_shape"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:padding="@dimen/_8sdp"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/settings_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:background="@drawable/edtext_shape"
+            android:backgroundTint="#90CAF9"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
